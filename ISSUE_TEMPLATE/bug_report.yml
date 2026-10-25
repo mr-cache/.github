@@ -1,0 +1,23 @@
+name: Bug report
+description: Report a reproducible, non-sensitive MrCache defect.
+body:
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions and environment
+      description: PHP, Illuminate, Redis, client, database, transactions and replicas.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Use synthetic data. Do not include credentials, customer rows or exploit details.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
